@@ -1,0 +1,313 @@
+{
+    "items": [
+
+    {
+    "id": 1,
+    "name": "Candle One",
+    "product": "Candle",
+    "type": "Fruit",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Pineapple",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 2,
+    "name": "Candle Two",
+    "product": "Candle",
+    "type": "Fruit",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Melon",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 3,
+    "name": "Candle Three",
+    "product": "Candle",
+    "type": "Fruit",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Orange",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 4,
+    "name": "Candle Four",
+    "product": "Candle",
+    "type": "Fruit",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Lemon",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 5,
+    "name": "Candle Five",
+    "product": "Candle",
+    "type": "Fruit",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Strawberry",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 6,
+    "name": "Candle Six",
+    "product": "Candle",
+    "type": "Flower",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Magnolia",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 7,
+    "name": "Candle Seven",
+    "product": "Candle",
+    "type": "Flower",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Vanilla",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 8,
+    "name": "Candle Eight",
+    "product": "Candle",
+    "type": "Flower",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Lavender",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 9,
+    "name": "Candle Nine",
+    "product": "Candle",
+    "type": "Flower",
+    "ingredients": "Soy, Essential oils",
+    "fragrance": "Jasmine",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 10,
+    "name": "Candle Ten",
+    "product": "Candle",
+    "type": "Other",
+    "ingredients": "Paraffin, Essential oils",
+    "fragrance": "Coffee",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 11,
+    "name": "Candle Eleven",
+    "product": "Candle",
+    "type": "Other",
+    "ingredients": "Paraffin, Essential oils",
+    "fragrance": "Biscuit",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 12,
+    "name": "Candle Twelve",
+    "product": "Candle",
+    "type": "Other",
+    "ingredients": "Paraffin, Essential oils",
+    "fragrance": "Musk",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 13,
+    "name": "Candle Thirteenth",
+    "product": "Candle",
+    "type": "Other",
+    "ingredients": "Soy",
+    "fragrance": "No",
+    "description": "A great candle for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 14,
+    "name": "Diffuser One",
+    "product": " Diffuser",
+    "type": "Ultrasonic",
+    "ingredients": "Water, Essential oils ",
+    "fragrance": "Orange",
+    "description": "A great diffuser for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 15,
+    "name": "Diffuser Two",
+    "product": " Diffuser",
+    "type": "Ultrasonic",
+    "ingredients": "Water, Essential oils ",
+    "fragrance": "Lavender",
+    "description": "A great diffuser for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 16,
+    "name": "Diffuser Three",
+    "product": " Diffuser",
+    "type": "Aroma",
+    "ingredients": "Water, Essential oils ",
+    "fragrance": "Lavender",
+    "description": "A great diffuser for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 17,
+    "name": "Diffuser Four",
+    "product": " Diffuser",
+    "type": "Aroma",
+    "ingredients": "Water, Essential oils ",
+    "fragrance": "Orange",
+    "description": "A great diffuser for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 18,
+    "name": "Aroma Sticks One",
+    "product": "Aroma Sticks",
+    "type": "Diffuser",
+    "ingredients": "Rattan, Essential oils ",
+    "fragrance": "Orange",
+    "description": "A great aroma sticks for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    {
+    "id": 19,
+    "name": "Aroma Sticks Two",
+    "product": "Aroma Sticks",
+    "type": "Diffuser",
+    "ingredients": "Rattan, Essential oils ",
+    "fragrance": "Lavender",
+    "description": "A great aroma sticks for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+    
+    
+    {
+    "id": 20,
+    "name": "Aroma Sticks Three",
+    "product": "Aroma Sticks",
+    "type": "Burning",
+    "ingredients": "Rattan, Essential oils ",
+    "fragrance": "Lavender",
+    "description": "A great aroma sticks for any occasion.",
+    "quantity": 50,
+    "volume": 50,
+    "price": "25",
+    "time": 130,
+    "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    }
+
+]
+}
+    
+    
+    
+    
+    
+    
+    
