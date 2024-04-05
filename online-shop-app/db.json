@@ -214,7 +214,7 @@
     {
     "id": 15,
     "name": "Diffuser Two",
-    "product": " Diffuser",
+    "product": "Diffuser",
     "type": "Ultrasonic",
     "ingredients": "Water, Essential oils ",
     "fragrance": "Lavender",
@@ -229,7 +229,7 @@
     {
     "id": 16,
     "name": "Diffuser Three",
-    "product": " Diffuser",
+    "product": "Diffuser",
     "type": "Aroma",
     "ingredients": "Water, Essential oils ",
     "fragrance": "Lavender",
@@ -244,7 +244,7 @@
     {
     "id": 17,
     "name": "Diffuser Four",
-    "product": " Diffuser",
+    "product": "Diffuser",
     "type": "Aroma",
     "ingredients": "Water, Essential oils ",
     "fragrance": "Orange",
