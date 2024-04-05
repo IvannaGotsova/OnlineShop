@@ -1,4 +1,5 @@
 import { HttpContext, HttpHeaders, HttpParams } from "@angular/common/http";
+import { NumberValueAccessor } from "@angular/forms";
 
 export interface Options {
     headers?: HttpHeaders | {
@@ -18,7 +19,16 @@ export interface Options {
 }
 
 export interface Items {
+    items: Item[];
+    total: number;
+    page: number;
+    perPage: number;
+    totalPages: number;
 
+}
+
+export interface Item {
+    
 }
 
 export interface PaginationParams {
