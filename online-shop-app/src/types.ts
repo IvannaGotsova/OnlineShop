@@ -1,5 +1,4 @@
 import { HttpContext, HttpHeaders, HttpParams } from "@angular/common/http";
-import { NumberValueAccessor } from "@angular/forms";
 
 export interface Options {
     headers?: HttpHeaders | {
@@ -28,6 +27,7 @@ export interface Items {
 }
 
 export interface Item {
+    id?: number;
     name: string,
     product: string,
     type: string,
@@ -36,13 +36,13 @@ export interface Item {
     description: string,
     quantity: number,
     volume: number,
-    price: number,
+    price: string,
     time: number,
     photo: string,
 }
 
 export interface PaginationParams {
-    [param: string]: string | number | boolean | ReadonlyArray<string | number | boolean>;
+       [param: string]: string | number | boolean | ReadonlyArray<string | number | boolean>;
     page: number;
     perPage: number;
 }

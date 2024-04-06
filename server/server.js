@@ -1,83 +1,54 @@
-const express = require('express');
+const express = require("express");
+const fs = require("fs");
+const cors = require("cors");
 
 const app = express();
+const port = 3000;
 
-app.get('/items', (req, res) => {
-  res.send('Successful response.');
-});
+// Cors configuration - Allows requests from localhost:4200
+const corsOptions = {
+  origin: "http://localhost:4200",
+  optionsSuccessStatus: 204,
+  methods: "GET, POST, PUT, DELETE",
+};
 
-app.listen(3000, () => console.log('Example app is listening on port 3000.'));const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('server/db.json');
-const middlewares = jsonServer.defaults();
-const db = require('./db.json');
-const fs = require('fs');
+// Use cors middleware
+app.use(cors(corsOptions));
 
-server.use(middlewares);
-server.use(jsonServer.bodyParser);
+// Use express.json() middleware to parse JSON bodies of requests
+app.use(express.json());
 
-server.post('/login', (req, res, next) => { 
-  const items = readItems();
+// GET route - Allows to get all the items
+// example: localhost:3000/items?page=0&perPage=2
+app.get("/items", (req, res) => {
+  const page = parseInt(req.query.page) || 0;
+  const perPage = parseInt(req.query.perPage) || 10;
 
-  const user = items.filter(
-    u => u.username === req.body.username && u.password === req.body.password
-  )[0];
+  fs.readFile("db.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send("Internal Server Error");
+      return;
+    }
 
-  if (user) {
-    res.send({ ...formatUser(user), token: checkIfAdmin(user) });
-  } else {
-    res.status(401).send('Incorrect username or password');
-  }
-});
+    const jsonData = JSON.parse(data);
 
-server.post('/register', (req, res) => {
-  const items = readItems();
-  const user = items.filter(u => u.username === req.body.username)[0];
+    const start = page * perPage;
+    const end = start + perPage;
 
-  if (user === undefined || user === null) {
-    res.send({
-      ...formatUser(req.body),
-      token: checkIfAdmin(req.body)
+    const result = jsonData.items.slice(start, end);
+
+    res.status(200).json({
+      items: result,
+      total: jsonData.items.length,
+      page,
+      perPage,
+      totalPages: Math.ceil(jsonData.items.length / perPage),
     });
-    db.items.push(req.body);
-  } else {
-    res.status(500).send('User already exists');
-  }
+  });
 });
 
-server.use('/items', (req, res, next) => {
-  if (isAuthorized(req) || req.query.bypassAuth === 'true') {
-    next();
-  } else {
-    res.sendStatus(401);
-  }
+
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
 });
-
-server.use(router);
-server.listen(3000, () => {
-  console.log('JSON Server is running');
-});
-
-function formatUser(user) {
-  delete user.password;
-  user.role = user.username === 'admin'
-    ? 'admin'
-    : 'user';
-  return user;
-}
-
-function checkIfAdmin(user, bypassToken = false) {
-  return user.username === 'admin' || bypassToken === true
-    ? 'admin-token'
-    : 'user-token';
-}
-
-function isAuthorized(req) {
-  return req.headers.authorization === 'admin-token' ? true : false;
-}
-
-function readItems() {
-  const dbRaw = fs.readFileSync('./server/db.json');  
-  const items = JSON.parse(dbRaw).items
-  return items;
-}
