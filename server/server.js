@@ -13,7 +13,7 @@ const corsOptions = {
 };
 
 // Use cors middleware
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); 
 
 // Use express.json() middleware to parse JSON bodies of requests
 app.use(express.json());

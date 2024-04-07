@@ -28,17 +28,17 @@ export interface Items {
 
 export interface Item {
     id?: number;
-    name: string,
-    product: string,
-    type: string,
-    ingredients: string,
-    fragrance: string,
-    description: string,
-    quantity: number,
-    volume: number,
-    price: string,
-    time: number,
-    photo: string,
+    name: string;
+    product: string;
+    type: string;
+    ingredients: string;
+    fragrance: string;
+    description: string;
+    quantity: number;
+    volume: number;
+    price: string;
+    time: number;
+    photo: string;
 }
 
 export interface PaginationParams {

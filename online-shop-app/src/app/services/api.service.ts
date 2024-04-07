@@ -9,7 +9,6 @@ import { Options } from '../../types';
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
-  // Used to make a GET request to the API
   get<T>(url: string, options: Options): Observable<T> {
     return this.httpClient.get<T>(url, options) as Observable<T>;
   }
