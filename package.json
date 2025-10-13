@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "server": "^1.0.39"
-  },
-  "devDependencies": {
-    "json-server": "^1.0.0-alpha.23",
-    "ts-node": "^10.9.2"
-  }
-}
