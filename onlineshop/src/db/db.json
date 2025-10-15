@@ -1,5 +1,5 @@
 {
-  "items": [
+  "candles": [
     {
       "id": 1,
       "name": "Candle One",
@@ -193,8 +193,11 @@
       "price": "25",
       "time": 130,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
-    },
+    }
+  ], 
 
+  "diffusers": 
+  [
     {
       "id": 14,
       "name": "Diffuser One",
@@ -209,7 +212,7 @@
       "time": 130,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
     },
-
+ 
     {
       "id": 15,
       "name": "Diffuser Two",
@@ -253,8 +256,11 @@
       "price": "25",
       "time": 130,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
-    },
+    }
+  ], 
 
+  "aromasticks": 
+  [
     {
       "id": 18,
       "name": "Aroma Sticks One",
@@ -297,6 +303,39 @@
       "volume": 50,
       "price": "25",
       "time": 130,
+      "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    }
+  ], 
+  
+  "others": 
+  [
+    {
+      "id": 21,
+      "name": "Others One",
+      "product": "Others",
+      "type": "Burning",
+      "ingredients": "Rattan, Essential oils ",
+      "fragrance": "Lavender",
+      "description": "Other.",
+      "quantity": 50,
+      "volume": 50,
+      "price": "20",
+      "time": 120,
+      "photo": "online-shop-app\\src\\assets\\Picture.jpg"
+    },
+
+    {
+      "id": 22,
+      "name": "Others Two",
+      "product": "Others",
+      "type": "Burning",
+      "ingredients": "Rattan, Essential oils ",
+      "fragrance": "Lavender",
+      "description": "Other.",
+      "quantity": 50,
+      "volume": 50,
+      "price": "20",
+      "time": 120,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
     }
   ]
