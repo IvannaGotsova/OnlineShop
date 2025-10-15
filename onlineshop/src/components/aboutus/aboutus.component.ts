@@ -5,9 +5,8 @@ import { bootstrapApplication } from '@angular/platform-browser';
   selector: 'app-aboutUs',
   standalone: true,
   imports: [],
-  template: `
-       <p>About Us</p>
-  `
+  templateUrl: './aboutus.component.html',
+  styleUrl: './aboutus.component.css'
 })
 export class AboutUs {
 }
