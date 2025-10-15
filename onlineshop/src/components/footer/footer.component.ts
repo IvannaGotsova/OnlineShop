@@ -5,9 +5,8 @@ import { bootstrapApplication } from '@angular/platform-browser';
   selector: 'app-footer',
   standalone: true,
   imports: [],
-  template: `
-       <p>&copy; {{ title }} - {{ year }}</p>
-  `
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.css'
 })
 export class Footer {
     @Input() title: string = 'Online Shop';
