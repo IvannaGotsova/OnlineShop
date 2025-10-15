@@ -1,13 +1,32 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
-import { AppRoutingModuleModule } from './app-routing.module.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module'; 
+
+import { AppComponent } from './app.component';
+import { Candles } from '../components/candles/candles.component';
+import { AromaSticks } from '../components/aromasticks/aromasticks.component';
+import { Diffusers } from '../components/diffusers/diffusers.component';
+import { Others } from '../components/others/others.component';
+import { AboutUs } from '../components/aboutus/aboutus.component';
+import { Contacts } from '../components/contacts/contacts.component';
+
 
 @NgModule({
+  declarations: [
+    AppComponent,
+    Candles,
+    AromaSticks,
+    Diffusers,
+    Others,
+    AboutUs,
+    Contacts
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AppRoutingModuleModule
+    RouterModule,       
+    AppRoutingModule      
   ],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
