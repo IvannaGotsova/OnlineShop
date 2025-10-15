@@ -5,9 +5,8 @@ import { bootstrapApplication } from '@angular/platform-browser';
   selector: 'app-others',
   standalone: true,
   imports: [],
-  template: `
-       <p>Others</p>
-  `
+  templateUrl: './others.component.html',
+  styleUrl: './others.component.css'
 })
 export class Others {
 }

@@ -2,16 +2,15 @@ import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-diffusers',
+  selector: 'app-candles',
   standalone: true,
   imports: [],
-  template: `
-       <p>Diffusers</p>
-  `
+  templateUrl: './candles.component.html',
+  styleUrl: './candles.component.css'
 })
-export class Diffusers {
+export class Candles {
 }
 
-bootstrapApplication(Diffusers, {
+bootstrapApplication(Candles, {
   providers: [],
 });
