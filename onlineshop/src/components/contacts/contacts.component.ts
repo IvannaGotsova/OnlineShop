@@ -10,7 +10,3 @@ import { bootstrapApplication } from '@angular/platform-browser';
 })
 export class Contacts {
 }
-
-bootstrapApplication(Contacts, {
-  providers: [],
-});

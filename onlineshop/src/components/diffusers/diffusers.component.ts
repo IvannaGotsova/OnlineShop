@@ -11,6 +11,3 @@ import { bootstrapApplication } from '@angular/platform-browser';
 export class Diffusers {
 }
 
-bootstrapApplication(Diffusers, {
-  providers: [],
-});

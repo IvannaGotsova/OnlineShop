@@ -11,6 +11,3 @@ import { bootstrapApplication } from '@angular/platform-browser';
 export class Candles {
 }
 
-bootstrapApplication(Candles, {
-  providers: [],
-});
