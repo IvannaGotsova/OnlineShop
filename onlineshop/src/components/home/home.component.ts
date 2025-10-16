@@ -7,6 +7,7 @@ import { AppRoutingModule } from '../../app/app-routing.module.module';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [Header, Footer, Body, AppRoutingModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
