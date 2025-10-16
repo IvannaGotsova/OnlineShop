@@ -14,7 +14,7 @@ import { AppRoutingModule } from '../../app/app-routing.module.module';
 export class Header {
   constructor(private router: Router) {}
 
-  navigateTo(path: string) {
+  navigateTo(path: string): void {
     this.router.navigate([path]);
   }
 }
