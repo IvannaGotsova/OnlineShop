@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { Header } from '../components/header/header.component';
-import { Footer } from '../components/footer/footer.component';
-import { Body } from '../components/body/body.component';
 import { Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module.module';
+import { HomeComponent } from '../components/home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, Body, AppRoutingModule],
+  imports: [AppRoutingModule, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
