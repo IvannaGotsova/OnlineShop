@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'contacts', component: Contacts },
   { path: 'aboutus', component: AboutUs },
   { path: '**', component: HomeComponent }
+  
 ];
 
 @NgModule({
