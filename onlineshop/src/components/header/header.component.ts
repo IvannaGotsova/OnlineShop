@@ -1,13 +1,11 @@
-import { Component, Input } from '@angular/core';
-import { bootstrapApplication } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from '../../app/app-routing.module.module';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [AppRoutingModule, RouterModule],
+  imports: [RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
