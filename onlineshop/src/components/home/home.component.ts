@@ -4,11 +4,13 @@ import { Footer } from '../footer/footer.component';
 import { Body } from '../body/body.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [Header, Footer, Body, CommonModule, RouterModule],
+  imports: [RouterModule], 
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

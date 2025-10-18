@@ -1,9 +1,0 @@
-.image-container {
-  display: flex;
-  gap: 10px;
-}
-
-.image-container img {
-  width: 150px;
-  height: auto;
-}

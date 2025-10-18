@@ -8,6 +8,7 @@ import { Diffusers } from '../components/diffusers/diffusers.component';
 import { Others } from '../components/others/others.component';
 import { Contacts } from '../components/contacts/contacts.component';
 import { AboutUs } from '../components/aboutus/aboutus.component';
+import { Body } from '../components/body/body.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,7 +23,7 @@ const routes: Routes = [
 
 @Component({
   selector: 'app-root',
-  imports: [HomeComponent, RouterModule],
+  imports: [Body, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
