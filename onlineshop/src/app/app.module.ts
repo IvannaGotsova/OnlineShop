@@ -12,7 +12,7 @@ import { Contacts } from '../components/contacts/contacts.component';
 import { Body } from '../components/body/body.component';
 import { Footer } from '../components/footer/footer.component';
 import { Header } from '../components/header/header.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { Header } from '../components/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
