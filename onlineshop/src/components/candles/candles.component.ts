@@ -18,8 +18,9 @@ export class Candles {
 
   ngOnInit() {
   this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.candles; 
+    this.items = data.candles.map(item => ({ ...item, showDetails: false }));
   });
 }
 }
+
 

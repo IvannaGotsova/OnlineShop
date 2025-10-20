@@ -1,15 +1,23 @@
-<div *ngFor="let item of items" class="item">
-  <h2>{{ item.name }}</h2>
-  <img src="assets/Picture.jpg" alt="Image" />
-  <h3>Product: {{ item.product }}</h3>
-  <h3>Type: {{ item.type }}</h3>
-  <p><strong>Ingredients:</strong> {{ item.ingredients }}</p>
-  <p><strong>Fragrance:</strong> {{ item.fragrance }}</p>
-  <p><strong>Description:</strong> {{ item.description }}</p>
-  <p><strong>Quantity:</strong> ${{ item.quantity }}</p>
-  <p><strong>Volume:</strong> ${{ item.volume }}</p>
-  <p><strong>Price:</strong> ${{ item.price }}</p>
-  <p><strong>Time:</strong> ${{ item.time }}</p>
+<br>
+<div class="items">
+  <div *ngFor="let item of items" class="item">
+    <h2>{{ item.name }}</h2>
+    <img src="assets/Picture.jpg" alt="Image" />
+    <h3>Product: {{ item.product }}</h3>
+    <h3>Type: {{ item.type }}</h3>
+  
+    <button (click)="item.showDetails = !item.showDetails">
+      {{ item.showDetails ? 'Show Less' : 'Show More' }}
+    </button>
+  
+    <div *ngIf="item.showDetails">
+      <p><strong>Ingredients:</strong> {{ item.ingredients }}</p>
+      <p><strong>Fragrance:</strong> {{ item.fragrance }}</p>
+      <p><strong>Description:</strong> {{ item.description }}</p>
+      <p><strong>Quantity:</strong> ${{ item.quantity }}</p>
+      <p><strong>Volume:</strong> ${{ item.volume }}</p>
+      <p><strong>Price:</strong> ${{ item.price }}</p>
+      <p><strong>Time:</strong> ${{ item.time }}</p>
+    </div>
+  </div>
 </div>
-
-

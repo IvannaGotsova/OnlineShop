@@ -18,7 +18,7 @@ export class Others {
 
   ngOnInit() {
   this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.others; 
+    this.items = data.others.map(item => ({ ...item, showDetails: false }));
   });
 }
 }

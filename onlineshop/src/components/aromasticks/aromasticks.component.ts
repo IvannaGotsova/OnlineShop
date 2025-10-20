@@ -18,7 +18,7 @@ export class AromaSticks {
 
   ngOnInit() {
   this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.aromasticks; 
+    this.items = data.aromasticks.map(item => ({ ...item, showDetails: false }));
   });
 }
 }

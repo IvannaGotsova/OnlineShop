@@ -18,7 +18,7 @@ export class Diffusers {
 
   ngOnInit() {
   this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.diffusers; 
+    this.items = data.diffusers.map(item => ({ ...item, showDetails: false }));
   });
 }
 }
