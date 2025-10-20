@@ -11,4 +11,5 @@ export interface Item {
   price: number;
   time: number;
   photo: string;
+  showDetails?: boolean;
 }
