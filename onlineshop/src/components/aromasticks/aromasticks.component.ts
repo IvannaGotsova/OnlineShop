@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './aromasticks.component.html',
-  styleUrl: './aromasticks.component.css'
+  styleUrl: './aromasticks.component.css',
 })
 export class AromaSticks {
   items: Item[] = [];
@@ -17,8 +17,11 @@ export class AromaSticks {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-  this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.aromasticks.map(item => ({ ...item, showDetails: false }));
-  });
-}
+    this.http.get<DbData>('assets/db/db.json').subscribe((data) => {
+      this.items = data.aromasticks.map((item) => ({
+        ...item,
+        showDetails: false,
+      }));
+    });
+  }
 }

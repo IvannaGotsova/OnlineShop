@@ -1,17 +1,17 @@
-<br>
-<h1 style="text-align: center;">Others</h1>
-<br>
+<br />
+<h1 style="text-align: center">Others</h1>
+<br />
 <div class="items">
   <div *ngFor="let item of items" class="item">
     <h2>{{ item.name }}</h2>
     <img src="assets/Picture.jpg" alt="Image" />
     <h3>Product: {{ item.product }}</h3>
     <h3>Type: {{ item.type }}</h3>
-  
+
     <button (click)="item.showDetails = !item.showDetails">
-      {{ item.showDetails ? 'Show Less' : 'Show More' }}
+      {{ item.showDetails ? "Show Less" : "Show More" }}
     </button>
-  
+
     <div *ngIf="item.showDetails">
       <p><strong>Ingredients:</strong> {{ item.ingredients }}</p>
       <p><strong>Fragrance:</strong> {{ item.fragrance }}</p>

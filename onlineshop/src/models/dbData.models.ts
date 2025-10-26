@@ -1,4 +1,4 @@
-import { Item } from "./item.model";
+import { Item } from './item.model';
 
 export interface DbData {
   candles: Item[];

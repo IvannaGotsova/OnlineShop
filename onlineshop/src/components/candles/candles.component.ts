@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './candles.component.html',
-  styleUrl: './candles.component.css'
+  styleUrl: './candles.component.css',
 })
 export class Candles {
   items: Item[] = [];
@@ -17,10 +17,11 @@ export class Candles {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-  this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.candles.map(item => ({ ...item, showDetails: false }));
-  });
+    this.http.get<DbData>('assets/db/db.json').subscribe((data) => {
+      this.items = data.candles.map((item) => ({
+        ...item,
+        showDetails: false,
+      }));
+    });
+  }
 }
-}
-
-

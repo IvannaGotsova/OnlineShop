@@ -1,6 +1,6 @@
 img {
   width: 150px;
-  height: auto; 
+  height: auto;
 }
 
 .items {
@@ -11,7 +11,7 @@ img {
 
 .item {
   flex: 0 1 calc(33.333% - 16px);
-  max-width: calc(33.333% - 16px); 
+  max-width: calc(33.333% - 16px);
   box-sizing: border-box;
   background-color: #f0f0f0;
   padding: 20px;

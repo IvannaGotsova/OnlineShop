@@ -15,6 +15,5 @@ export const routes: Routes = [
   { path: 'others', component: Others },
   { path: 'contacts', component: Contacts },
   { path: 'aboutus', component: AboutUs },
-  { path: '**', component: HomeComponent }
-  
+  { path: '**', component: HomeComponent },
 ];

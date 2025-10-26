@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './diffusers.component.html',
-  styleUrl: './diffusers.component.css'
+  styleUrl: './diffusers.component.css',
 })
 export class Diffusers {
   items: Item[] = [];
@@ -17,9 +17,11 @@ export class Diffusers {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-  this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.diffusers.map(item => ({ ...item, showDetails: false }));
-  });
+    this.http.get<DbData>('assets/db/db.json').subscribe((data) => {
+      this.items = data.diffusers.map((item) => ({
+        ...item,
+        showDetails: false,
+      }));
+    });
+  }
 }
-}
-

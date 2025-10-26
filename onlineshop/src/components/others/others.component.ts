@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './others.component.html',
-  styleUrl: './others.component.css'
+  styleUrl: './others.component.css',
 })
 export class Others {
   items: Item[] = [];
@@ -17,9 +17,8 @@ export class Others {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-  this.http.get<DbData>('assets/db/db.json').subscribe(data => {
-    this.items = data.others.map(item => ({ ...item, showDetails: false }));
-  });
+    this.http.get<DbData>('assets/db/db.json').subscribe((data) => {
+      this.items = data.others.map((item) => ({ ...item, showDetails: false }));
+    });
+  }
 }
-}
-

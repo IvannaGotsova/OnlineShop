@@ -18,16 +18,15 @@ const routes: Routes = [
   { path: 'others', component: Others },
   { path: 'contacts', component: Contacts },
   { path: 'aboutus', component: AboutUs },
-  { path: '**', component: HomeComponent }
+  { path: '**', component: HomeComponent },
 ];
 
 @Component({
   selector: 'app-root',
   imports: [Body, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-
 export class AppComponent {
   title = 'onlineshop';
 
@@ -37,4 +36,3 @@ export class AppComponent {
     this.router.navigate([`/${path}`]);
   }
 }
-

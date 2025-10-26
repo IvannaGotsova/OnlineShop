@@ -194,10 +194,9 @@
       "time": 130,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
     }
-  ], 
+  ],
 
-  "diffusers": 
-  [
+  "diffusers": [
     {
       "id": 14,
       "name": "Diffuser One",
@@ -212,7 +211,7 @@
       "time": 130,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
     },
- 
+
     {
       "id": 15,
       "name": "Diffuser Two",
@@ -257,10 +256,9 @@
       "time": 130,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
     }
-  ], 
+  ],
 
-  "aromasticks": 
-  [
+  "aromasticks": [
     {
       "id": 18,
       "name": "Aroma Sticks One",
@@ -305,10 +303,9 @@
       "time": 130,
       "photo": "online-shop-app\\src\\assets\\Picture.jpg"
     }
-  ], 
-  
-  "others": 
-  [
+  ],
+
+  "others": [
     {
       "id": 21,
       "name": "Others One",

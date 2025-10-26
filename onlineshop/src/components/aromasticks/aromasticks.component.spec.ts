@@ -8,9 +8,8 @@ describe('AromaSticks', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AromaSticks]
-    })
-    .compileComponents();
+      imports: [AromaSticks],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(AromaSticks);
     component = fixture.componentInstance;

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module'; 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from '../components/home/home.component';
 import { Candles } from '../components/candles/candles.component';
@@ -15,18 +15,9 @@ import { Header } from '../components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Body, 
-    Footer, 
-    Header    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, Body, Footer, Header],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

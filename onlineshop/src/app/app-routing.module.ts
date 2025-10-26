@@ -8,7 +8,6 @@ import { Contacts } from '../components/contacts/contacts.component';
 import { AboutUs } from '../components/aboutus/aboutus.component';
 import { HomeComponent } from '../components/home/home.component';
 
-
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'aromasticks', component: AromaSticks },
@@ -17,12 +16,11 @@ const routes: Routes = [
   { path: 'others', component: Others },
   { path: 'contacts', component: Contacts },
   { path: 'aboutus', component: AboutUs },
-  { path: '**', component: HomeComponent }
-  
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
