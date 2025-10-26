@@ -1,9 +1,42 @@
-.image-container {
-  display: flex;
-  gap: 10px;
+img {
+  width: 500px;
 }
 
-.image-container img {
-  width: 150px;
-  height: auto;
+.image-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  background-color: white;
+  padding: 5px;
+}
+
+.image-container .candles {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.candle1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 570px;
+}
+
+.diffusers img{
+  height: 555px;
+}
+
+.others img{
+  width: 750px;
+  height: 250px;
+}
+
+img:hover {
+  transform: scaleX(-1);
+}
+
+img {
+  border-radius: 5%;
+  opacity: 0.8;
 }
