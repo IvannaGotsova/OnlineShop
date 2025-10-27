@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { Header } from '../header/header.component';
 import { Footer } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-body',
